@@ -86,696 +86,688 @@
 </header>
 
 
+
 <main id="main">
   <style type="text/css">
-    body {
-      background-color: #f5f4f5;
-      margin-top: 20px;
-    }
+      body {
+          background-color: #f5f4f5;
+          margin-top: 20px;
+      }
 
-    /* Tr Job Post */
+      /* Tr Job Post */
 
-    .job-item {
-      background-color: #fff;
-    }
+      .job-item {
+          background-color: #fff;
+      }
 
-    .job-tab .nav-tabs {
-      margin-bottom: 30px;
-      border-bottom: 0;
-    }
+      .job-tab .nav-tabs {
+          margin-bottom: 30px;
+          border-bottom: 0;
+      }
 
-    .job-tab .nav-tabs>li {
-      float: none;
-      display: inline;
-    }
+      .job-tab .nav-tabs>li {
+          float: none;
+          display: inline;
+      }
 
-    .job-tab .nav-tabs li {
-      margin-right: 15px;
-    }
+      .job-tab .nav-tabs li {
+          margin-right: 15px;
+      }
 
-    .job-tab .nav-tabs li:last-child {
-      margin-right: 0;
-    }
+      .job-tab .nav-tabs li:last-child {
+          margin-right: 0;
+      }
 
-    .job-tab .nav-tabs {
-      position: relative;
-      z-index: 1;
-      display: inline-block;
-    }
+      .job-tab .nav-tabs {
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+      }
 
-    .job-tab .nav-tabs:after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #fff;
-      z-index: -1;
-    }
+      .job-tab .nav-tabs:after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          z-index: -1;
+      }
 
 
 
-    .job-tab .nav-tabs>li a {
-      display: inline-block;
-      background-color: #fff;
-      border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      color: #000;
-      padding: 5px 30px;
-    }
+      .job-tab .nav-tabs>li a {
+          display: inline-block;
+          background-color: #fff;
+          border: none;
+          border-radius: 30px;
+          font-size: 16px;
+          color: #000;
+          padding: 5px 30px;
+      }
 
-    .job-tab .nav-tabs>li>a.active,
-    .job-tab .nav-tabs>li a.active>:focus,
-    .job-tab .nav-tabs>li>a.active:hover,
-    .job-tab .nav-tabs>li>a:hover {
-      border: none;
-      background-color: #008def;
-      color: #fff;
-    }
+      .job-tab .nav-tabs>li>a.active,
+      .job-tab .nav-tabs>li a.active>:focus,
+      .job-tab .nav-tabs>li>a.active:hover,
+      .job-tab .nav-tabs>li>a:hover {
+          border: none;
+          background-color: #008def;
+          color: #fff;
+      }
 
-    .job-item {
+      .job-item {
 
-      border-radius: 10px;
-      position: relative;
-      margin-bottom: 30px;
-      z-index: 1;
-      height: 100%;
-    }
+          border-radius: 10px;
+          position: relative;
+          margin-bottom: 30px;
+          z-index: 1;
+          height: 100%;
+      }
 
-    .job-item .btn.btn-primary {
-      text-transform: capitalize;
-    }
+      .job-item .btn.btn-primary {
+          text-transform: capitalize;
+      }
 
-    .job-item .job-info {
-      font-size: 16px;
-      color: #000;
-      /* overflow: hidden; */
-      padding: 60px 30px 30px;
+      .job-item .job-info {
+          font-size: 16px;
+          color: #000;
+          /* overflow: hidden; */
+          padding: 60px 30px 30px;
 
-    }
+      }
 
-    .job-info .company-logo {
-      margin-bottom: 30px;
-    }
+      .job-info .company-logo {
+          margin-bottom: 30px;
+      }
 
-    .job-info .tr-title {
-      margin-bottom: 15px;
-    }
+      .job-info .tr-title {
+          margin-bottom: 15px;
+      }
 
-    .job-info .tr-title span {
-      font-size: 14px;
-      display: block;
-    }
+      .job-info .tr-title span {
+          font-size: 14px;
+          display: block;
+      }
 
-    .job-info .tr-title a {
-      color: #000;
-    }
+      .job-info .tr-title a {
+          color: #000;
+      }
 
-    /* .job-info .tr-title a:hover {
-  color: #008def;
+      /* .job-info .tr-title a:hover {
+color: #008def;
 } */
 
-    .job-info ul {
-      margin-bottom: 30px;
-    }
+      .job-info ul {
+          margin-bottom: 30px;
+      }
 
-    .job-meta li,
-    .job-meta li a {
-      color: #646464;
-    }
+      .job-meta li,
+      .job-meta li a {
+          color: #646464;
+      }
 
-    /* .job-meta li a:hover {
-  color: #008def;
+      /* .job-meta li a:hover {
+color: #008def;
 } */
 
-    .job-meta li {
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
+      .job-meta li {
+          font-size: 12px;
+          margin-bottom: 10px;
+      }
 
-    .job-meta li span i {
-      color: #000;
-    }
+      .job-meta li span i {
+          color: #000;
+      }
 
-    .job-meta li i {
-      margin-right: 15px;
-    }
+      .job-meta li i {
+          margin-right: 15px;
+      }
 
-    .job-item .time {
-      position: relative;
-    }
+      .job-item .time {
+          position: relative;
+      }
 
-    .job-item .time:after {
-      position: absolute;
-      content: "";
-      bottom: 35px;
-      left: -50px;
-      width: 150%;
-      height: 1px;
-      background-color: #f5f4f5;
-      z-index: -1;
-    }
+      .job-item .time:after {
+          position: absolute;
+          content: "";
+          bottom: 35px;
+          left: -50px;
+          width: 150%;
+          height: 1px;
+          background-color: #f5f4f5;
+          z-index: -1;
+      }
 
-    .job-item:hover .time,
-    .job-item:hover .time:after {
-      opacity: 0;
-    }
+      .job-item:hover .time,
+      .job-item:hover .time:after {
+          opacity: 0;
+      }
 
-    .job-item .time span {
-      font-size: 12px;
-      color: #bebebe;
-      line-height: 25px;
-    }
+      .job-item .time span {
+          font-size: 12px;
+          color: #bebebe;
+          line-height: 25px;
+      }
 
-    .job-item .btn.btn-primary,
-    .role .btn.btn-primary,
-    .job-item .time a span {
-      padding: 5px 10px;
-      border-radius: 4px;
-      line-height: 10px;
-      font-size: 12px;
-    }
+      .job-item .btn.btn-primary,
+      .role .btn.btn-primary,
+      .job-item .time a span {
+          padding: 5px 10px;
+          border-radius: 4px;
+          line-height: 10px;
+          font-size: 12px;
+      }
 
-    .job-item .time a span {
-      color: #fff;
-      background-color: #f1592a;
-      border-color: #f1592a;
-    }
+      .job-item .time a span {
+          color: #fff;
+          background-color: #f1592a;
+          border-color: #f1592a;
+      }
 
-    .job-item .time a span.part-time {
-      background-color: #00aeef;
-      border-color: #00aeef;
-    }
+      .job-item .time a span.part-time {
+          background-color: #00aeef;
+          border-color: #00aeef;
+      }
 
-    .job-item .time a span.freelance {
-      background-color: #92278f;
-      border-color: #92278f;
-    }
+      .job-item .time a span.freelance {
+          background-color: #92278f;
+          border-color: #92278f;
+      }
 
-    .job-item:hover .item-overlay {
-      opacity: 1;
-    }
+      .job-item:hover .item-overlay {
+          opacity: 1;
+      }
 
 
 
-    .item-overlay .btn.btn-primary {
-      background-color: #007bd4;
-      border-color: #007bd4;
-      margin-bottom: 10px;
-    }
+      .item-overlay .btn.btn-primary {
+          background-color: #007bd4;
+          border-color: #007bd4;
+          margin-bottom: 10px;
+      }
 
-    .item-overlay .job-info,
-    .item-overlay .job-info ul li,
-    .item-overlay .job-info ul li i,
+      .item-overlay .job-info,
+      .item-overlay .job-info ul li,
+      .item-overlay .job-info ul li i,
 
-    .job-social {
-      margin-top: 35px;
-    }
+      .job-social {
+          margin-top: 35px;
+      }
 
-    .job-social li {
-      float: left;
-    }
+      .job-social li {
+          float: left;
+      }
 
-    .job-social li+li {
-      margin-left: 15px;
-    }
+      .job-social li+li {
+          margin-left: 15px;
+      }
 
-    .job-social li a i {
-      margin-right: 0;
-      font-size: 14px;
-    }
+      .job-social li a i {
+          margin-right: 0;
+          font-size: 14px;
+      }
 
-    .job-social li a {
-      width: 35px;
-      height: 35px;
-      text-align: center;
-      display: block;
-      background-color: #007bd4;
-      line-height: 35px;
-      border-radius: 100%;
-      border: 1px solid #007bd4;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-    }
+      .job-social li a {
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          display: block;
+          background-color: #007bd4;
+          line-height: 35px;
+          border-radius: 100%;
+          border: 1px solid #007bd4;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+      }
 
-    .job-social li:last-child a {
-      background-color: #fff;
-    }
+      .job-social li:last-child a {
+          background-color: #fff;
+      }
 
-    .job-social li:last-child a i {
-      color: #008def;
-    }
+      .job-social li:last-child a i {
+          color: #008def;
+      }
 
-    .job-social li a:before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      border-radius: 100%;
-      background-color: #008def;
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-    }
+      .job-social li a:before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          border-radius: 100%;
+          background-color: #008def;
+          -webkit-transform: scale(0);
+          -moz-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+      }
 
-    .job-social li a:hover:before {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      padding: 5px;
-    }
+      .job-social li a:hover:before {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+          padding: 5px;
+      }
 
-    .job-social li a:hover {
-      border-color: #fff;
-    }
+      .job-social li a:hover {
+          border-color: #fff;
+      }
 
-    .job-social li a:hover i {
-      color: #fff;
-    }
+      .job-social li a:hover i {
+          color: #fff;
+      }
 
-    .tr-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+      .tr-list {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
 
-    .badge {
-      display: inline-block;
-      padding: 0.52em 0.593em;
-      font-size: 0.8125em;
-      font-weight: 500;
-      line-height: 1;
-      color: #fff;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: baseline;
-      border-radius: 0.25rem;
-    }
+      .badge {
+          display: inline-block;
+          padding: 0.52em 0.593em;
+          font-size: 0.8125em;
+          font-weight: 500;
+          line-height: 1;
+          color: #fff;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: baseline;
+          border-radius: 0.25rem;
+      }
 
-    .bg-label-success {
-      background-color: #f2f6f8 !important;
-      color: #000000 !important;
-    }
+      .bg-label-success {
+          background-color: #f2f6f8 !important;
+          color: #3fb0bd !important;
+      }
   </style>
   <!-- ======= Services Section ======= -->
   <style>
-    .labNumber {
-      text-align: center;
-      padding: 20px;
-    }
+      .labNumber {
+          text-align: center;
+          padding: 20px;
+      }
 
-    .labNumber li {
-      display: inline-block;
-    }
+      .labNumber li {
+          display: inline-block;
+      }
 
-    .labNumber li a {
-      display: inline-block;
-      padding: 5px 25px;
-      font-size: 15px;
-      background-color: rgb(255, 255, 255) !important;
-      border-radius: 20px;
-      margin: 0 8px;
-    }
+      .labNumber li a {
+          display: inline-block;
+          padding: 5px 25px;
+          font-size: 15px;
+          background-color: rgb(255, 255, 255) !important;
+          border-radius: 20px;
+          margin:0 8px;
+      }
 
 
-    .labNumber li a.active,
-    .tabs li a.active {
-      border: 1px solid rgb(36, 132, 234);
-      text-align: center;
-      color: #ffffff;
-      background-color: rgb(36, 132, 234) !important;
-      border-radius: 15px;
+      .labNumber li a.active,
+      .tabs li a.active {
+          border: 1px solid rgb(36, 132, 234);
+          text-align: center;
+          color: #ffffff;
+          background-color: rgb(36, 132, 234) !important;
+          border-radius: 15px;
 
-    }
+      }
   </style>
   <section id="services" class="services" style="background-color: rgb(246, 245, 245);">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h1 style="padding-top: 15px;">LABS</h1>
-        <br>
-      </div>
-      <div class="tr-job-posted sect  ion-padding">
-        <div class="container">
-          <div class="job-tab text-center ">
-            <div class="lab">
-              <ul class="labNumber animated pulse ">
-                <li><a class=" lablinks" href="lab4.html">Lab 4</a></li>
-                <li><a class=" lablinks" href="lab5.html">Lab 5</a></li>
-                <li><a class=" active lablinks" href="lab6.html">Lab 6</a></li>
-                <li><a class=" lablinks" href="lab7.html">Lab 7</a></li>
-                <li><a class=" lablinks" href="lab8.html">Lab 8</a></li>
-                  
-              
-              </ul>
-            </div>
-            <div class="tab-content text-left">
-              <!-- Lab1 -->
-              <style>
-                .tabs-to-dropdown .nav-wrapper {
-                  padding: 15px;
-                  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
-                }
-
-                .tabs-to-dropdown .nav-wrapper a {
-                  color: var(--darkgreen);
-                }
-
-                .tabs-to-dropdown .nav-pills .nav-link.active {
-                  background-color: #008def;
-                }
-
-                .tabs-to-dropdown .nav-pills li:not(:last-child) {
-                  margin-right: 30px;
-                }
-
-                .tabs-to-dropdown .tab-content .container-fluid {
-                  max-width: 1250px;
-                  padding-top: 70px;
-                  padding-bottom: 70px;
-                }
-
-                .tabs-to-dropdown .dropdown-menu {
-                  border: none;
-                  border-radius: 20px;
-                  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.08);
-                }
-
-                .tabs-to-dropdown .dropdown-item {
-                  padding: 14px 28px;
-                }
-
-                .tabs-to-dropdown .dropdown-item:active {
-                  color: var(--white);
-                }
-              </style>
-               <div role="tabpanel" class="tab-pane fade active show" id="lab3">
-                <div class="row">
-                    <div class="">
-                        <div class="job-item">
-                            <div class="item-overlay">
-                                <div class="tabs-to-dropdown">
-                                    <div
-                                        class="nav-wrapper d-flex align-items-center justify-content-between">
-                                        <ul class="nav nav-pills d-none d-md-flex" id="pills-tab"
-                                            role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <a class="nav-link active"
-                                                    id="pills-requirement3-tab" data-toggle="pill"
-                                                    href="#pills-requirement3" role="tab"
-                                                    aria-controls="pills-requirement3"
-                                                    aria-selected="false">Requirement</a>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <a class="nav-link" id="pills-ex1-tab"
-                                                    data-toggle="pill" href="#pills-ex1" role="tab"
-                                                    aria-controls="pills-ex1"
-                                                    aria-selected="false">Excercise 1</a>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                                <a class="nav-link" id="pills-ex2-tab"
-                                                    data-toggle="pill" href="#pills-ex2" role="tab"
-                                                    aria-controls="pills-ex2"
-                                                    aria-selected="false">Excercise 2</a>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane active" id="pills-requirement3"
-                                            role="tabpanel" aria-labelledby="pills-requirement3-tab"
-                                            style="padding-left: 30px;">
-                                            <div class="container-fluid" style="padding-top: 30px;">
-                                                <p><b style="font-size: 20px;">Requirement</b></p>
-                                                <p>
-                                                    • Trong menu Labs, tạo 1 menu Lab6 (file
-                                                    lab3.html)
-                                                    sau đó tạo 2 tab Ex1, Ex2.
-                                                    <br>
-                                                    • Ex1: Thiết kế một trang Web đơn giản sử dụng
-                                                    mẫu
-                                                    F-pattern ==> chuyển sang html (ex1.html).
-                                                    <br>
-                                                    • Ex2: Thiết kế một trang Web sử dụng mẫu
-                                                    Z-pattern
-                                                    ==> chuyển sang html (ex2.html).
-                                                    <br>
-                                                    • Với cả Ex1, Ex2: Tạo 2 tab Design và
-                                                    Implementation:
-                                                    <br>
-                                                    Design: chụp lại hình ảnh để có cái nhìn tổng
-                                                    quan
-                                                    về file thiết kế, có nút Download để download
-                                                    file
-                                                    thiết kế về nếu
-                                                    muốn.
-                                                    <br>
-                                                    Implementation: nội dung phần hiện thực trên
-                                                    html.
-                                                    <br>
-                                                    •Upload lên Github.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- ex1 -->
-                                        <div class="tab-pane fade" id="pills-ex1" role="tabpanel"
-                                            aria-labelledby="pills-ex1-tab">
-                                            <div class="tabs-to-dropdown">
-                                                <div
-                                                    class="nav-wrapper d-flex align-items-center justify-content-between">
-                                                    <ul class="nav nav-pills d-none d-md-flex"
-                                                        id="pills-tab" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link active"
-                                                                id="pills-design-ex1-tab"
-                                                                data-toggle="pill"
-                                                                href="#pills-design-ex1" role="tab"
-                                                                aria-controls="pills-design-ex1"
-                                                                aria-selected="false">Design</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link"
-                                                                id="pills-implement-ex1-tab"
-                                                                data-toggle="pill"
-                                                                href="#pills-implement-ex1"
-                                                                role="tab"
-                                                                aria-controls="pills-implement-ex1"
-                                                                aria-selected="false">Implement</a>
-                                                        </li>
-                                                    </ul>
-
-
-                                                </div>
-                                                <div class="tab-content" id="pills-tabContent">
-                                                    <div class="tab-pane active"
-                                                        id="pills-design-ex1" role="tabpanel"
-                                                        aria-labelledby="pills-design-ex1-tab">
-                                                        <div class="container-fluid"
-                                                            style="padding-top: 30px;">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <p style="text-align: center;">
-                                                                        <b style="font-size: 20px;">Design
-                                                                            on paper</b></p>
-                                                                    <p>
-                                                                        <img src="images/lab6_ex1_paper.jpg"
-                                                                            alt="" width="100%"
-                                                                            height="586px"
-                                                                            style="padding-bottom: 10px;">
-                                                                        <button
-                                                                            style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
-                                                                            <a href="images/lab6_ex1_paper.jpg"
-                                                                                style="color: white; text-decoration: none;"
-                                                                                download>
-                                                                                Download
-                                                                            </a>
-                                                                        </button>
-
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <p style="text-align: center;">
-                                                                        <b style="font-size: 20px;">Design
-                                                                            on Figma</b></p>
-                                                                    <p>
-                                                                        <img src="images/lab6_ex1_fig.jpg"
-                                                                            alt="" width="100%"
-                                                                            style="padding-bottom: 10px;">
-                                                                        <button
-                                                                            style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
-                                                                            <a href="https://www.figma.com/file/06dndGy4nhKlKR34NLpHhe/21130471-VoMinhPhi?type=design&node-id=203%3A3&mode=design&t=5UZrfdYNl0j08LhP-1"
-                                                                                style="color: white; text-decoration: none;"
-                                                                                target="_blank"
-                                                                                rel="noopener noreferrer">
-                                                                                Link Figma
-                                                                            </a>
-                                                                        </button>
-                                                                        <button
-                                                                            style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
-                                                                            <a href="images/lab6_ex1_fig.jpg"
-                                                                                style="color: white; text-decoration: none;"
-                                                                                download>
-                                                                                Download
-                                                                            </a>
-                                                                        </button>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade"
-                                                        id="pills-implement-ex1" role="tabpanel"
-                                                        aria-labelledby="pills-implement-ex1-tab">
-                                                        <div class="row">
-                                                            <div>
-                                                                <iframe src="Ex1/index.html"
-                                                                    style="width: 100%;height: 1380px;"></iframe>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end ex1 -->
-
-                                        <!-- ex2 -->
-                                        <div class="tab-pane fade" id="pills-ex2" role="tabpanel"
-                                            aria-labelledby="nav-contact-tab">
-                                            <div class="tabs-to-dropdown">
-                                                <div
-                                                    class="nav-wrapper d-flex align-items-center justify-content-between">
-                                                    <ul class="nav nav-pills d-none d-md-flex"
-                                                        id="pills-tab" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link active"
-                                                                id="pills-design-ex2-tab"
-                                                                data-toggle="pill"
-                                                                href="#pills-design-ex2" role="tab"
-                                                                aria-controls="pills-design-ex2"
-                                                                aria-selected="false">Design</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link"
-                                                                id="pills-implement-ex2-tab"
-                                                                data-toggle="pill"
-                                                                href="#pills-implement-ex2"
-                                                                role="tab"
-                                                                aria-controls="pills-implement-ex2"
-                                                                aria-selected="false">Implement</a>
-                                                        </li>
-                                                    </ul>
-
-
-                                                </div>
-                                                <div class="tab-content" id="pills-tabContent">
-                                                    <div class="tab-pane active"
-                                                        id="pills-design-ex2" role="tabpanel"
-                                                        aria-labelledby="pills-design-ex2-tab">
-                                                        <div class="container-fluid"
-                                                            style="padding-top: 30px;">
-                                                            <div class="row">
-                                                                <div class="col-6">
-                                                                    <p style="text-align: center;">
-                                                                        <b style="font-size: 20px;">Design
-                                                                            on paper</b></p>
-                                                                    <p>
-                                                                        <img src="images/lab6_ex2_paper.jpg"
-                                                                            alt="" width="100%"
-                                                                            height="541px"
-                                                                            style="padding-bottom: 10px;">
-                                                                        <button
-                                                                            style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
-                                                                            <a href="images/lab6_ex2_paper.jpg"
-                                                                                style="color: white; text-decoration: none;"
-                                                                                download>
-                                                                                Download
-                                                                            </a>
-                                                                        </button>
-
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <p style="text-align: center;">
-                                                                        <b style="font-size: 20px;">Design
-                                                                            on Figma</b></p>
-                                                                    <p>
-                                                                        <img src="images/lab6_ex2_fig.jpg"
-                                                                            alt="" width="100%"
-                                                                            style="padding-bottom: 10px;">
-                                                                        <button
-                                                                            style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
-                                                                            <a href="https://www.figma.com/file/06dndGy4nhKlKR34NLpHhe/21130471-VoMinhPhi?type=design&node-id=241%3A30&mode=design&t=PcAdLtQSiRqW3JMB-1"
-                                                                                style="color: white; text-decoration: none;"
-                                                                                target="_blank"
-                                                                                rel="noopener noreferrer">
-                                                                                Link Figma
-                                                                            </a>
-                                                                        </button>
-                                                                        <button
-                                                                            style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
-                                                                            <a href="images/lab6_ex2_fig.jpg"
-                                                                                style="color: white; text-decoration: none;"
-                                                                                download>
-                                                                                Download
-                                                                            </a>
-                                                                        </button>
-                                                                        </p>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade"
-                                                        id="pills-implement-ex2" role="tabpanel"
-                                                        aria-labelledby="pills-implement-ex2-tab">
-                                                        <div class="row">
-                                                            <div>
-                                                                <iframe
-                                                                    src="Ex2/index.html"
-                                                                    style="height: 1430px; width: 100%;margin-top: 20px; "></iframe>
-                                                            </div>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--end ex2 -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div><!-- /.row -->
-            </div><!-- /.tab-pane -->
-            <!-- end Lab3 -->
-              <!-- end Lab1 -->
-
-              <!-- Lab2 -->
-              <!-- /.tab-pane -->
-              <!-- end Lab2 -->
-
-              <!-- Lab3 -->
-              <!-- /.tab-pane -->
-              <!-- end Lab3 -->
-
-              <!-- Lab4 -->
-
-              <!-- end Lab4 -->
-
-              <!-- end lab5 -->
-
-              <!-- end lab5 -->
-            </div>
+      <div class="container" data-aos="fade-up">
+          <div class="section-title">
+              <h2 style="padding-top: 15px;">Labs</h2>
+              <br>
           </div>
-        </div>
+          <div class="tr-job-posted sect  ion-padding">
+              <div class="container">
+                  <div class="job-tab text-center ">
+                      <div class="lab">
+                          <ul class="labNumber animated pulse ">
+                              <li><a class="lablinks" href="lab4.html">Lab 4</a></li>
+                              <li><a class="lablinks" href="lab5.html">Lab 5</a></li>
+                              <li><a class="active lablinks" href="lab6.html">Lab 6</a></li>
+                              <li><a class="lablinks" href="lab7.html">Lab 7</a></li>
+                              <li><a class="lablinks" href="lab8.html">Lab 8</a></li>
+                          </ul>
+                      </div>
+                      <div class="tab-content text-left">
+                          <!-- Lab1 -->
+                          <style>
+                              .tabs-to-dropdown .nav-wrapper {
+                                  padding: 15px;
+                                  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+                              }
+
+                              .tabs-to-dropdown .nav-wrapper a {
+                                  color: var(--darkgreen);
+                              }
+
+                              .tabs-to-dropdown .nav-pills .nav-link.active {
+                                  background-color: #008def;
+                              }
+
+                              .tabs-to-dropdown .nav-pills li:not(:last-child) {
+                                  margin-right: 30px;
+                              }
+
+                              .tabs-to-dropdown .tab-content .container-fluid {
+                                  max-width: 1250px;
+                                  padding-top: 70px;
+                                  padding-bottom: 70px;
+                              }
+
+                              .tabs-to-dropdown .dropdown-menu {
+                                  border: none;
+                                  border-radius: 20px;
+                                  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.08);
+                              }
+
+                              .tabs-to-dropdown .dropdown-item {
+                                  padding: 14px 28px;
+                              }
+
+                              .tabs-to-dropdown .dropdown-item:active {
+                                  color: var(--white);
+                              }
+                          </style>
+                          <!-- /.tab-pane -->
+                          <!-- end Lab1 -->
+
+                          <!-- Lab2 -->
+                          <!-- /.tab-pane -->
+                          <!-- end Lab2 -->
+
+                          <!-- Lab3 -->
+                          <div role="tabpanel" class="tab-pane fade active show" id="lab3">
+                              <div class="row">
+                                  <div class="">
+                                      <div class="job-item">
+                                          <div class="item-overlay">
+                                              <div class="tabs-to-dropdown">
+                                                  <div
+                                                      class="nav-wrapper d-flex align-items-center justify-content-between">
+                                                      <ul class="nav nav-pills d-none d-md-flex" id="pills-tab"
+                                                          role="tablist">
+                                                          <li class="nav-item" role="presentation">
+                                                              <a class="nav-link active"
+                                                                  id="pills-requirement3-tab" data-toggle="pill"
+                                                                  href="#pills-requirement3" role="tab"
+                                                                  aria-controls="pills-requirement3"
+                                                                  aria-selected="false">Requirement</a>
+                                                          </li>
+                                                          <li class="nav-item" role="presentation">
+                                                              <a class="nav-link" id="pills-ex1-tab"
+                                                                  data-toggle="pill" href="#pills-ex1" role="tab"
+                                                                  aria-controls="pills-ex1"
+                                                                  aria-selected="false">Excercise 1</a>
+                                                          </li>
+                                                          <li class="nav-item" role="presentation">
+                                                              <a class="nav-link" id="pills-ex2-tab"
+                                                                  data-toggle="pill" href="#pills-ex2" role="tab"
+                                                                  aria-controls="pills-ex2"
+                                                                  aria-selected="false">Excercise 2</a>
+                                                          </li>
+                                                      </ul>
+
+
+                                                  </div>
+                                                  <div class="tab-content" id="pills-tabContent">
+                                                      <div class="tab-pane active" id="pills-requirement3"
+                                                          role="tabpanel" aria-labelledby="pills-requirement3-tab"
+                                                          style="padding-left: 30px;">
+                                                          <div class="container-fluid" style="padding-top: 30px;">
+                                                              <p><b style="font-size: 20px;">Requirement</b></p>
+                                                              <p>
+                                                                  • Trong menu Labs, tạo 1 menu Lab3 (file
+                                                                  lab3.html)
+                                                                  sau đó tạo 2 tab Ex1, Ex2.
+                                                                  <br>
+                                                                  • Ex1: Thiết kế một trang Web đơn giản sử dụng
+                                                                  mẫu
+                                                                  F-pattern ==> chuyển sang html (ex1.html).
+                                                                  <br>
+                                                                  • Ex2: Thiết kế một trang Web sử dụng mẫu
+                                                                  Z-pattern
+                                                                  ==> chuyển sang html (ex2.html).
+                                                                  <br>
+                                                                  • Với cả Ex1, Ex2: Tạo 2 tab Design và
+                                                                  Implementation:
+                                                                  <br>
+                                                                  Design: chụp lại hình ảnh để có cái nhìn tổng
+                                                                  quan
+                                                                  về file thiết kế, có nút Download để download
+                                                                  file
+                                                                  thiết kế về nếu
+                                                                  muốn.
+                                                                  <br>
+                                                                  Implementation: nội dung phần hiện thực trên
+                                                                  html.
+                                                                  <br>
+                                                                  •Upload lên  Github.
+                                                              </p>
+                                                          </div>
+                                                      </div>
+                                                      <!-- ex1 -->
+                                                      <div class="tab-pane fade" id="pills-ex1" role="tabpanel"
+                                                          aria-labelledby="pills-ex1-tab">
+                                                          <div class="tabs-to-dropdown">
+                                                              <div
+                                                                  class="nav-wrapper d-flex align-items-center justify-content-between">
+                                                                  <ul class="nav nav-pills d-none d-md-flex"
+                                                                      id="pills-tab" role="tablist">
+                                                                      <li class="nav-item" role="presentation">
+                                                                          <a class="nav-link active"
+                                                                              id="pills-design-ex1-tab"
+                                                                              data-toggle="pill"
+                                                                              href="#pills-design-ex1" role="tab"
+                                                                              aria-controls="pills-design-ex1"
+                                                                              aria-selected="false">Design</a>
+                                                                      </li>
+                                                                      <li class="nav-item" role="presentation">
+                                                                          <a class="nav-link"
+                                                                              id="pills-implement-ex1-tab"
+                                                                              data-toggle="pill"
+                                                                              href="#pills-implement-ex1"
+                                                                              role="tab"
+                                                                              aria-controls="pills-implement-ex1"
+                                                                              aria-selected="false">  Implement</a></src>
+                                                                      </li>
+                                                                  </ul>
+
+
+                                                              </div>
+                                                              <div class="tab-content" id="pills-tabContent">
+                                                                  <div class="tab-pane active"
+                                                                      id="pills-design-ex1" role="tabpanel"
+                                                                      aria-labelledby="pills-design-ex1-tab">
+                                                                      <div class="container-fluid"
+                                                                          style="padding-top: 30px;">
+                                                                          <div class="row">
+                                                                              <div class="col-6">
+                                                                                  <p style="text-align: center;">
+                                                                                      <b style="font-size: 20px;">Design
+                                                                                          on paper</b></p>
+                                                                                  <p>
+                                                                                      <img src="images/lab6_ex1_paper.jpg"
+                                                                                          alt="" width="100%"
+                                                                                          height="586px"
+                                                                                          style="padding-bottom: 10px;">
+                                                                                      <button
+                                                                                          style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
+                                                                                          <a href="images/lab6_ex1_paper.jpg"
+                                                                                              style="color: white; text-decoration: none;"
+                                                                                              download>
+                                                                                              Download
+                                                                                          </a>
+                                                                                      </button>
+
+                                                                              </div>
+                                                                              <div class="col-6">
+                                                                                  <p style="text-align: center;">
+                                                                                      <b style="font-size: 20px;">Design
+                                                                                          on Figma</b></p>
+                                                                                  <p>
+                                                                                      <img src="images/lab6_ex1_fig.jpg"
+                                                                                          alt="" width="100%"
+                                                                                          style="padding-bottom: 10px;">
+                                                                                      <button
+                                                                                          style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
+                                                                                          <a href="https://www.figma.com/file/06dndGy4nhKlKR34NLpHhe/21130471-VoMinhPhi?type=design&node-id=203%3A3&mode=design&t=lU7obhlDC0xWYFKj-1"
+                                                                                              style="color: white; text-decoration: none;"
+                                                                                              target="_blank"
+                                                                                              rel="noopener noreferrer">
+                                                                                              Link Figma
+                                                                                          </a>
+                                                                                      </button>
+                                                                                      <button
+                                                                                          style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
+                                                                                          <a href="images/lab6_ex1_fig.jpg"
+                                                                                              style="color: white; text-decoration: none;"
+                                                                                              download>
+                                                                                              Download
+                                                                                          </a>
+                                                                                      </button>
+                                                                              </div>
+                                                                          </div>
+
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="tab-pane fade"
+                                                                      id="pills-implement-ex1" role="tabpanel"
+                                                                      aria-labelledby="pills-implement-ex1-tab">
+                                                                      <div class="row">
+                                                                          <div>
+                                                                              <iframe src="Ex1/index.html"
+                                                                                  style="width: 100%;height: 1380px;"></iframe>
+                                                                          </div>
+                                                                          </p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <!-- end ex1 -->
+
+                                                      <!-- ex2 -->
+                                                      <div class="tab-pane fade" id="pills-ex2" role="tabpanel"
+                                                          aria-labelledby="nav-contact-tab">
+                                                          <div class="tabs-to-dropdown">
+                                                              <div
+                                                                  class="nav-wrapper d-flex align-items-center justify-content-between">
+                                                                  <ul class="nav nav-pills d-none d-md-flex"
+                                                                      id="pills-tab" role="tablist">
+                                                                      <li class="nav-item" role="presentation">
+                                                                          <a class="nav-link active"
+                                                                              id="pills-design-ex2-tab"
+                                                                              data-toggle="pill"
+                                                                              href="#pills-design-ex2" role="tab"
+                                                                              aria-controls="pills-design-ex2"
+                                                                              aria-selected="false">Design</a>
+                                                                      </li>
+                                                                      <li class="nav-item" role="presentation">
+                                                                          <a class="nav-link"
+                                                                              id="pills-implement-ex2-tab"
+                                                                              data-toggle="pill"
+                                                                              href="#pills-implement-ex2"
+                                                                              role="tab"
+                                                                              aria-controls="pills-implement-ex2"
+                                                                              aria-selected="false">Implement</a>
+                                                                      </li>
+                                                                  </ul>
+
+
+                                                              </div>
+                                                              <div class="tab-content" id="pills-tabContent">
+                                                                  <div class="tab-pane active"
+                                                                      id="pills-design-ex2" role="tabpanel"
+                                                                      aria-labelledby="pills-design-ex2-tab">
+                                                                      <div class="container-fluid"
+                                                                          style="padding-top: 30px;">
+                                                                          <div class="row">
+                                                                              <div class="col-6">
+                                                                                  <p style="text-align: center;">
+                                                                                      <b style="font-size: 20px;">Design
+                                                                                          on paper</b></p>
+                                                                                  <p>
+                                                                                      <img src="images/lab6_ex2_paper.jpg"
+                                                                                          alt="" width="100%"
+                                                                                          height="541px"
+                                                                                          style="padding-bottom: 10px;">
+                                                                                      <button
+                                                                                          style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
+                                                                                          <a href="images/lab6_ex2_paper.jpg"
+                                                                                              style="color: white; text-decoration: none;"
+                                                                                              download>
+                                                                                              Download
+                                                                                          </a>
+                                                                                      </button>
+
+                                                                              </div>
+                                                                              <div class="col-6">
+                                                                                  <p style="text-align: center;">
+                                                                                      <b style="font-size: 20px;">Design
+                                                                                          on Figma</b></p>
+                                                                                  <p>
+                                                                                      <img src="images/lab6_ex2_fig.jpg"
+                                                                                          alt="" width="100%"
+                                                                                          style="padding-bottom: 10px;">
+                                                                                      <button
+                                                                                          style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
+                                                                                          <a href="https://www.figma.com/file/06dndGy4nhKlKR34NLpHhe/21130471-VoMinhPhi?type=design&node-id=241%3A30&mode=design&t=lU7obhlDC0xWYFKj-1"
+                                                                                              style="color: white; text-decoration: none;"
+                                                                                              target="_blank"
+                                                                                              rel="noopener noreferrer">
+                                                                                              Link Figma
+                                                                                          </a>
+                                                                                      </button>
+                                                                                      <button
+                                                                                          style="border-radius: 8px; padding: 10px 10px; background-color: #0994f8; border: none;">
+                                                                                          <a href="images/lab6_ex2_fig.jpg"
+                                                                                              style="color: white; text-decoration: none;"
+                                                                                              download>
+                                                                                              Download
+                                                                                          </a>
+                                                                                      </button>
+                                                                              </div>
+                                                                          </div>
+
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="tab-pane fade"
+                                                                      id="pills-implement-ex2" role="tabpanel"
+                                                                      aria-labelledby="pills-implement-ex2-tab">
+                                                                      <div class="row">
+                                                                          <div>
+                                                                              <iframe
+                                                                                  src="Ex2/index.html"
+                                                                                  style="height: 1430px; width: 100%;margin-top: 20px; "></iframe>
+                                                                          </div>
+                                                                          </p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <!--end ex2 -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                              </div><!-- /.row -->
+                          </div><!-- /.tab-pane -->
+                          <!-- end Lab3 -->
+
+                        
+                      </div>
+                  </div>
+              </div>
   </section>
   <!-- <div class="row">
 <-- End Services Section -->
@@ -793,300 +785,215 @@
 <script src="./tabs.js"></script>
 <!-- endtabstest -->
 
-    <!--  footer -->
-    <footr>
-      <div class="footer ">
-        <div class="container">
-          <div class="row">
+
+
+</main><!-- End #main -->
+<!-- ======= Footer ======= -->
+<footr>
+  <div class="footer ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="contact_bg">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Contact us</h2>
+            </div>
             <div class="col-md-12">
-              <form class="contact_bg">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="titlepage">
-                  <h2>Contact us</h2>
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Email" type="text" name="Your Email">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Phone" type="text" name="Your Phone">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <button class="send">Send</button>
-                </div>
-              </div>
+              <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
             </div>
-            </form>
-
+            <div class="col-md-12">
+              <input class="contactus" placeholder="Your Email" type="text" name="Your Email">
             </div>
-            <div class="col-md-12 border_top">
-              <form class="news">
-               <h3>Newsletter</h3>
-                <input class="newslatter" placeholder="ENTER YOUR MAIL" type="text" name=" ENTER YOUR MAIL">
-                <button class="submit">Subscribe</button>
-              </form>
+            <div class="col-md-12">
+              <input class="contactus" placeholder="Your Phone" type="text" name="Your Phone">
             </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-              <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                  <div class="address">
-                    <ul class="loca">
-                      <li>
-                        <a href="#"><img src="icon/loc.png" alt="#" /></a>Locations
-                   
-                        <li>
-                          
-                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
-                          <li>
-                            <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com </li>
-                          </ul>
-                         
-
-                        </div>
-                      </div>
-                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-                           <ul class="social_link">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                          </ul>
-                       </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-               <div class="container">
-              <div class="copyright">
-               
-                  <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free  html Templates</a></p>
-                </div>
-              </div>
+            <div class="col-md-12">
+              <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
             </div>
-          </footr>
-          <!-- end footer -->
-          <!-- Javascript files-->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/popper.min.js"></script>
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/jquery-3.0.0.min.js"></script>
-          <script src="js/plugin.js"></script>
-          <!-- sidebar -->
-          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-          <script src="js/custom.js"></script>
-          <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
-          <div id="preloader"></div>
-          <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-              class="bi bi-arrow-up-short"></i></a>
-        
-          <!-- Vendor JS Files -->
-          <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-          <script src="assets/vendor/aos/aos.js"></script>
-          <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-          <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-          <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-          <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-          <script src="assets/vendor/php-email-form/validate.js"></script>
-          <!-- Jquery JS-->
-          <script src="vendor/jquery/jquery.min.js"></script>
-          <!-- Vendor JS-->
-          <script src="vendor/select2/select2.min.js"></script>
-          <script src="vendor/datepicker/moment.min.js"></script>
-          <script src="vendor/datepicker/daterangepicker.js"></script>
-          <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-          <!-- Main JS-->
-          <script src="js/global.js"></script>
-          <!-- Template Main JS File -->
-          <script src="assets/js/main.js"></script>
-          <script src="js\firebase.js"></script>
-          <script>
-            const $tabsToDropdown = $(".tabs-to-dropdown");
-        
-            function generateDropdownMarkup(container) {
-              const $navWrapper = container.find(".nav-wrapper");
-              const $navPills = container.find(".nav-pills");
-              const firstTextLink = $navPills.find("li:first-child a").text();
-              const $items = $navPills.find("li");
-              const markup = `
-        <div class="dropdown d-md-none">
-          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ${firstTextLink}
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
-            ${generateDropdownLinksMarkup($items)}
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <button class="send">Send</button>
+            </div>
           </div>
         </div>
-        `;
-              $navWrapper.prepend(markup);
-            }
-        
-            function generateDropdownLinksMarkup(items) {
-              let markup = "";
-              items.each(function () {
-                const textLink = $(this).find("a").text();
-                markup += `<a class="dropdown-item" href="#">${textLink}</a>`;
-              });
-        
-              return markup;
-            }
-        
-            function showDropdownHandler(e) {
-              // works also
-              //const $this = $(this);
-              const $this = $(e.target);
-              const $dropdownToggle = $this.find(".dropdown-toggle");
-              const dropdownToggleText = $dropdownToggle.text().trim();
-              const $dropdownMenuLinks = $this.find(".dropdown-menu a");
-              const dNoneClass = "d-none";
-              $dropdownMenuLinks.each(function () {
-                const $this = $(this);
-                if ($this.text() == dropdownToggleText) {
-                  $this.addClass(dNoneClass);
-                } else {
-                  $this.removeClass(dNoneClass);
-                }
-              });
-            }
-        
-            function clickHandler(e) {
-              e.preventDefault();
-              const $this = $(this);
-              const index = $this.index();
-              const text = $this.text();
-              $this.closest(".dropdown").find(".dropdown-toggle").text(`${text}`);
-              $this
-                .closest($tabsToDropdown)
-                .find(`.nav-pills li:eq(${index}) a`)
-                .tab("show");
-            }
-        
-            function shownTabsHandler(e) {
-              // works also
-              //const $this = $(this);
-              const $this = $(e.target);
-              const index = $this.parent().index();
-              const $parent = $this.closest($tabsToDropdown);
-              const $targetDropdownLink = $parent.find(".dropdown-menu a").eq(index);
-              const targetDropdownLinkText = $targetDropdownLink.text();
-              $parent.find(".dropdown-toggle").text(targetDropdownLinkText);
-            }
-        
-            $tabsToDropdown.each(function () {
-              const $this = $(this);
-              const $pills = $this.find('a[data-toggle="pill"]');
-        
-              generateDropdownMarkup($this);
-        
-              const $dropdown = $this.find(".dropdown");
-              const $dropdownLinks = $this.find(".dropdown-menu a");
-        
-              $dropdown.on("show.bs.dropdown", showDropdownHandler);
-              $dropdownLinks.on("click", clickHandler);
-              $pills.on("shown.bs.tab", shownTabsHandler);
-            });
-        
-          </script>
-          <script>
-            const $tabsToDropdown = $(".tabs-to-dropdown");
-    
-            function generateDropdownMarkup(container) {
-                const $navWrapper = container.find(".nav-wrapper");
-                const $navPills = container.find(".nav-pills");
-                const firstTextLink = $navPills.find("li:first-child a").text();
-                const $items = $navPills.find("li");
-                const markup = `
-    <div class="dropdown d-md-none">
-      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        ${firstTextLink}
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
-        ${generateDropdownLinksMarkup($items)}
-      </div>
-    </div>
-    `;
-                $navWrapper.prepend(markup);
-            }
-    
-            function generateDropdownLinksMarkup(items) {
-                let markup = "";
-                items.each(function () {
-                    const textLink = $(this).find("a").text();
-                    markup += `<a class="dropdown-item" href="#">${textLink}</a>`;
-                });
-    
-                return markup;
-            }
-    
-            function showDropdownHandler(e) {
-                // works also
-                //const $this = $(this);
-                const $this = $(e.target);
-                const $dropdownToggle = $this.find(".dropdown-toggle");
-                const dropdownToggleText = $dropdownToggle.text().trim();
-                const $dropdownMenuLinks = $this.find(".dropdown-menu a");
-                const dNoneClass = "d-none";
-                $dropdownMenuLinks.each(function () {
-                    const $this = $(this);
-                    if ($this.text() == dropdownToggleText) {
-                        $this.addClass(dNoneClass);
-                    } else {
-                        $this.removeClass(dNoneClass);
-                    }
-                });
-            }
-    
-            function clickHandler(e) {
-                e.preventDefault();
-                const $this = $(this);
-                const index = $this.index();
-                const text = $this.text();
-                $this.closest(".dropdown").find(".dropdown-toggle").text(`${text}`);
-                $this
-                    .closest($tabsToDropdown)
-                    .find(`.nav-pills li:eq(${index}) a`)
-                    .tab("show");
-            }
-    
-            function shownTabsHandler(e) {
-                // works also
-                //const $this = $(this);
-                const $this = $(e.target);
-                const index = $this.parent().index();
-                const $parent = $this.closest($tabsToDropdown);
-                const $targetDropdownLink = $parent.find(".dropdown-menu a").eq(index);
-                const targetDropdownLinkText = $targetDropdownLink.text();
-                $parent.find(".dropdown-toggle").text(targetDropdownLinkText);
-            }
-    
-            $tabsToDropdown.each(function () {
-                const $this = $(this);
-                const $pills = $this.find('a[data-toggle="pill"]');
-    
-                generateDropdownMarkup($this);
-    
-                const $dropdown = $this.find(".dropdown");
-                const $dropdownLinks = $this.find(".dropdown-menu a");
-    
-                $dropdown.on("show.bs.dropdown", showDropdownHandler);
-                $dropdownLinks.on("click", clickHandler);
-                $pills.on("shown.bs.tab", shownTabsHandler);
-            });
-    
-        </script>
+        </form>
 
+        </div>
+        <div class="col-md-12 border_top">
+          <form class="news">
+           <h3>Newsletter</h3>
+            <input class="newslatter" placeholder="ENTER YOUR MAIL" type="text" name=" ENTER YOUR MAIL">
+            <button class="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+              <div class="address">
+                <ul class="loca">
+                  <li>
+                    <a href="#"><img src="icon/loc.png" alt="#" /></a>Locations
+               
+                    <li>
+                      
+                        <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
+                      <li>
+                        <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com </li>
+                      </ul>
+                     
 
+                    </div>
+                  </div>
+                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                       <ul class="social_link">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                      </ul>
+                   </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+           <div class="container">
+          <div class="copyright">
+           
+              <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free  html Templates</a></p>
+            </div>
+          </div>
+        </div>
+      </footr>
+</footer><!-- End  Footer -->
+
+ <!-- Javascript files-->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <script src="js/jquery-3.0.0.min.js"></script>
+ <script src="js/plugin.js"></script>
+ <!-- sidebar -->
+ <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script src="js/custom.js"></script>
+ <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+ <div id="preloader"></div>
+ <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+     class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Vendor JS Files -->
+ <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+ <script src="assets/vendor/aos/aos.js"></script>
+ <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+ <script src="assets/vendor/php-email-form/validate.js"></script>
+ <!-- Jquery JS-->
+ <script src="vendor/jquery/jquery.min.js"></script>
+ <!-- Vendor JS-->
+ <script src="vendor/select2/select2.min.js"></script>
+ <script src="vendor/datepicker/moment.min.js"></script>
+ <script src="vendor/datepicker/daterangepicker.js"></script>
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <!-- Main JS-->
+ <script src="js/global.js"></script>
+ <!-- Template Main JS File -->
+ <script src="assets/js/main.js"></script>
+ <script src="js\firebase.js"></script>
+ <script>
+   const $tabsToDropdown = $(".tabs-to-dropdown");
+
+   function generateDropdownMarkup(container) {
+     const $navWrapper = container.find(".nav-wrapper");
+     const $navPills = container.find(".nav-pills");
+     const firstTextLink = $navPills.find("li:first-child a").text();
+     const $items = $navPills.find("li");
+     const markup = `
+<div class="dropdown d-md-none">
+ <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   ${firstTextLink}
+ </button>
+ <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
+   ${generateDropdownLinksMarkup($items)}
+ </div>
+</div>
+`;
+     $navWrapper.prepend(markup);
+   }
+
+   function generateDropdownLinksMarkup(items) {
+     let markup = "";
+     items.each(function () {
+       const textLink = $(this).find("a").text();
+       markup += `<a class="dropdown-item" href="#">${textLink}</a>`;
+     });
+
+     return markup;
+   }
+
+   function showDropdownHandler(e) {
+     // works also
+     //const $this = $(this);
+     const $this = $(e.target);
+     const $dropdownToggle = $this.find(".dropdown-toggle");
+     const dropdownToggleText = $dropdownToggle.text().trim();
+     const $dropdownMenuLinks = $this.find(".dropdown-menu a");
+     const dNoneClass = "d-none";
+     $dropdownMenuLinks.each(function () {
+       const $this = $(this);
+       if ($this.text() == dropdownToggleText) {
+         $this.addClass(dNoneClass);
+       } else {
+         $this.removeClass(dNoneClass);
+       }
+     });
+   }
+
+   function clickHandler(e) {
+     e.preventDefault();
+     const $this = $(this);
+     const index = $this.index();
+     const text = $this.text();
+     $this.closest(".dropdown").find(".dropdown-toggle").text(`${text}`);
+     $this
+       .closest($tabsToDropdown)
+       .find(`.nav-pills li:eq(${index}) a`)
+       .tab("show");
+   }
+
+   function shownTabsHandler(e) {
+     // works also
+     //const $this = $(this);
+     const $this = $(e.target);
+     const index = $this.parent().index();
+     const $parent = $this.closest($tabsToDropdown);
+     const $targetDropdownLink = $parent.find(".dropdown-menu a").eq(index);
+     const targetDropdownLinkText = $targetDropdownLink.text();
+     $parent.find(".dropdown-toggle").text(targetDropdownLinkText);
+   }
+
+   $tabsToDropdown.each(function () {
+     const $this = $(this);
+     const $pills = $this.find('a[data-toggle="pill"]');
+
+     generateDropdownMarkup($this);
+
+     const $dropdown = $this.find(".dropdown");
+     const $dropdownLinks = $this.find(".dropdown-menu a");
+
+     $dropdown.on("show.bs.dropdown", showDropdownHandler);
+     $dropdownLinks.on("click", clickHandler);
+     $pills.on("shown.bs.tab", shownTabsHandler);
+   });
+
+ </script>
 
 </body>
 
